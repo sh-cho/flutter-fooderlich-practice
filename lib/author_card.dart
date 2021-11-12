@@ -42,7 +42,13 @@ class AuthorCard extends StatelessWidget {
             iconSize: 30,
             color: Colors.grey[400],
             onPressed: () {
-              const snackBar = SnackBar(content: Text("Favorite Pressed"));
+              final snackBar = SnackBar(
+                content: Text("Favorite Pressed"),
+                action: SnackBarAction(
+                  label: 'Dismiss',
+                  onPressed: () {},
+                ),
+              );
               ScaffoldMessenger.of(context).showSnackBar(snackBar);
             },
           ),
