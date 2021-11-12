@@ -43,7 +43,7 @@ class AuthorCard extends StatelessWidget {
             color: Colors.grey[400],
             onPressed: () {
               final snackBar = SnackBar(
-                content: Text("Favorite Pressed"),
+                content: const Text('Favorite Pressed'),
                 action: SnackBarAction(
                   label: 'Dismiss',
                   onPressed: () {},
