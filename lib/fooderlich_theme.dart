@@ -23,7 +23,6 @@ class FooderlichTheme {
       fontWeight: FontWeight.w600,
       color: Colors.black,
     ),
-    // XXX: Is this the only way?
     headline6: GoogleFonts.openSans(
       fontSize: 20.0,
       fontWeight: FontWeight.w600,
@@ -63,11 +62,9 @@ class FooderlichTheme {
     return ThemeData(
       brightness: Brightness.light,
       checkboxTheme: CheckboxThemeData(
-        fillColor: MaterialStateColor.resolveWith(
-              (states) {
-            return Colors.black;
-          },
-        ),
+        fillColor: MaterialStateColor.resolveWith((states) {
+          return Colors.black;
+        }),
       ),
       appBarTheme: const AppBarTheme(
         foregroundColor: Colors.black,

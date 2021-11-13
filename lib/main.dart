@@ -9,12 +9,9 @@ void main() {
 
 class Fooderlich extends StatelessWidget {
   const Fooderlich({Key? key}) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
-    final theme = FooderlichTheme.dark();
-
-    // TODO: Apply Home widget
+    final theme = FooderlichTheme.light();
     return MaterialApp(
       theme: theme,
       title: 'Fooderlich',
