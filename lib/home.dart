@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'screens/explore_screen.dart';
+import 'screens/grocery_screen.dart';
 import 'screens/recipes_screen.dart';
 
 class Home extends StatefulWidget {
@@ -16,7 +17,7 @@ class _HomeState extends State<Home> {
   static List<Widget> pages = <Widget>[
     ExploreScreen(),
     RecipesScreen(),
-    Container(color: Colors.blue),
+    GroceryScreen(),
   ];
 
   void _onItemTapped(int index) {
@@ -39,16 +40,16 @@ class _HomeState extends State<Home> {
         selectedItemColor: Theme.of(context).textSelectionTheme.selectionColor,
         currentIndex: _selectedIndex,
         onTap: _onItemTapped,
-        items: <BottomNavigationBarItem>[
-          const BottomNavigationBarItem(
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
             icon: Icon(Icons.explore),
             label: 'Explore',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.book),
             label: 'Recipes',
           ),
-          const BottomNavigationBarItem(
+          BottomNavigationBarItem(
             icon: Icon(Icons.list),
             label: 'To Buy',
           ),
